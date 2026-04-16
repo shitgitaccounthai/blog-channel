@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio & Blog</title>
+    <meta name="description" content="Personal website, research portfolio, and blog." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">AuthorName<span class="logo-dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <!-- Ambient lighting layers -->
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="bg-orb orb-3"></div>
+
+        <div class="hero-container container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">👋</span> Welcome to my digital garden
+                </div>
+                <h1>Observer & <br/><span class="text-gradient">Writer.</span></h1>
+                <p>Hi, I am an independent researcher and writer. This is my personal corner of the web where I document my research, share tutorials, and write about the future.</p>
+                
+                <div class="hero-actions">
+                    <a href="#blog" class="cta-btn primary">Read the Blog</a>
+                    <a href="#research" class="cta-btn secondary">View Research</a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat"><h3>40+</h3><span>Articles</span></div>
+                    <div class="stat"><h3>12</h3><span>Papers</span></div>
+                    <div class="stat"><h3>∞</h3><span>Curiosity</span></div>
+                </div>
+            </div>
+
+            <!-- Abstract Visual -->
+            <div class="hero-visual">
+                <div class="dashboard-panel glass article-mock">
+                    <div class="window-controls">
+                        <i></i><i></i><i></i>
+                    </div>
+                    <div class="panel-layout abstract-layout">
+                        <div class="article-header skeleton-line"></div>
+                        <div class="article-sub skeleton-line"></div>
+                        <div class="article-body">
+                            <div class="skeleton-line full"></div>
+                            <div class="skeleton-line full"></div>
+                            <div class="skeleton-line half"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating elements -->
+                <div class="floating-card glass float-1">
+                    <div class="card-icon">🔬</div>
+                    <div>
+                        <h4>Latest Paper</h4>
+                        <p>Published in Nature</p>
+                    </div>
+                </div>
+                <div class="floating-card glass float-2">
+                    <div class="card-icon">✍️</div>
+                    <div>
+                        <h4>New Post</h4>
+                        <p>Read time: 5 min</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container container-narrow">
+            <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+            <div class="glass about-box">
+                <p>I am deeply passionate about understanding complex systems. With a background in applied sciences, I spend most of my time diving down rabbit holes related to technology, human behavior, and the cosmos.</p>
+                <p>When I'm not conducting experiments or poring over data, I translate my findings into accessible essays right here on my blog. My goal is to make complex academic research readable for everyone.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <h2 class="section-title">Latest <span class="text-gradient">Writing</span></h2>
+            <div class="grid blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="feature-card glass post-card">
+                    <div class="post-meta">Oct 12, 2026 • 5 min read</div>
+                    <h3>The Architecture of Tomorrow</h3>
+                    <p>Exploring how glassmorphism and metallic UI trends mirror the physical evolution of our hardware...</p>
+                    <a href="#" class="read-more">Read article →</a>
+                </article>
+                <!-- Blog Post 2 -->
+                <article class="feature-card glass post-card">
+                    <div class="post-meta">Sep 28, 2026 • 8 min read</div>
+                    <h3>Understanding Volumetric Lighting</h3>
+                    <p>A deep dive into rendering techniques that give web pages a sense of immense depth and cybernetic flair.</p>
+                    <a href="#" class="read-more">Read article →</a>
+                </article>
+                <!-- Blog Post 3 -->
+                <article class="feature-card glass post-card">
+                    <div class="post-meta">Sep 10, 2026 • 4 min read</div>
+                    <h3>The Personal Web is Back</h3>
+                    <p>Why shifting away from massive platforms to self-hosted digital gardens is the future of the internet.</p>
+                    <a href="#" class="read-more">Read article →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="research" id="research">
+        <div class="container">
+            <h2 class="section-title">Selected <span class="text-gradient">Research</span></h2>
+            <div class="grid">
+                <div class="feature-card glass">
+                    <div class="feature-icon">📚</div>
+                    <h3>Quantum Fluid Dynamics</h3>
+                    <p>A paper detailing the anomalies found when dropping temperatures to absolute zero in sealed environments.</p>
+                    <a href="#" class="read-more">Download PDF</a>
+                </div>
+                <div class="feature-card glass">
+                    <div class="feature-icon">🛰️</div>
+                    <h3>Orbital Mechanics Modeling</h3>
+                    <p>New computational models that reduce satellite trajectory correction delays by up to 18%.</p>
+                    <a href="#" class="read-more">Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass">
+        <p>© 2026 AuthorName. Designed with high-end glassmorphic UI.</p>
+    </footer>
+</body>
+</html>
